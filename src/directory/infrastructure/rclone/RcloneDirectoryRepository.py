@@ -4,7 +4,7 @@ import subprocess
 
 class RcloneDirectoryRepository():
 
-    def execute(self, path: str) -> list | None:
+    def execute(self, path: str) -> list:
         params = ["rclone", "lsjson", path, "-R"]
         results = json.loads(subprocess.check_output(params))
         with open('tv_shows.json', 'w+') as json_file:
