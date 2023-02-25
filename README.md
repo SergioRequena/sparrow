@@ -105,3 +105,15 @@ python -m venv venv
 
 source venv/bin/activate (Linux) | venv\Scripts\activate (Windows)
 ```
+
+Secondly, you need to install dependencies running the next command:
+
+```
+pip install -r requirements.txt
+```
+
+Now, create the file ```.env``` in the root folder. You will need these variables:
+
+```
+TMDB_API_KEY={YOUR_PRIVATE_API_KEY}
+```
