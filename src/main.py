@@ -3,7 +3,8 @@ from directory.infrastructure.file.JsonDirectoryRepository import JsonDirectoryR
 
 def main():
     directories = JsonDirectoryRepository().execute()
-    print(directories)
+    for directory in directories:
+        print(directory)
 
 
 if __name__ == '__main__':
