@@ -1,8 +1,8 @@
-from directory.infrastructure.rclone.RcloneDirectoryRepository import RcloneDirectoryRepository
+from directory.infrastructure.file.JsonDirectoryRepository import JsonDirectoryRepository
 
 
 def main():
-    directories = RcloneDirectoryRepository().execute("source_path")
+    directories = JsonDirectoryRepository().execute()
     print(directories)
 
 
