@@ -3,6 +3,12 @@
 A program that allows you to check your tv show collection by using 
 [The Movie Database Api](https://developers.themoviedb.org/3).
 
+## Features
+* Scan your library looking for folders that does not contain or files or other folders. 
+* Scan your library looking for non-mkv files.
+* Scan your library looking for non-standard naming files.
+* Scan your library looking for tv shows that are incomplete.
+
 ## Initial conditions
 Your collection must follow the next structure:
 ```
@@ -18,7 +24,10 @@ SOURCE_PATH/
 │  ├─ 1x01 - Game of Thrones.mkv
 │  ├─ 1x02 - Game of Thrones.mkv
 │  ├─ (...)
-├─ House of the Dragon (2022) {tmdb-94997}
+├─ House of the Dragon (2022) {tmdb-94997}/
+│  ├─ 1x01 - House of the Dragon.mkv
+│  ├─ 1x02 - House of the Dragon.mkv
+│  ├─ (...)
 ├─ (...)
 ```
 
