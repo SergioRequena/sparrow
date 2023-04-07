@@ -1,5 +1,7 @@
 import json
 
+from src.directory.application.shows import Shows
+
 
 class JsonDirectoryRepository():
 
@@ -7,4 +9,4 @@ class JsonDirectoryRepository():
         f = open('tv_shows.json')
         data = json.load(f)
         f.close()
-        return data
+        return Shows(data).list_shows()
