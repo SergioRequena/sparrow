@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List
 
-from src.show.domain.Season import Season
+from src.show.domain.season import Season
 
 
 class Show(BaseModel):

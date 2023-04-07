@@ -3,8 +3,8 @@ import json
 import os
 from dotenv import load_dotenv
 
-from src.show.domain.Season import Season
-from src.show.domain.Show import Show
+from src.show.domain.season import Season
+from src.show.domain.show import Show
 
 load_dotenv()
 URL = 'https://api.themoviedb.org/3/'
